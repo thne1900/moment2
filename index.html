@@ -4,13 +4,30 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/321c3d6291.js" crossorigin="anonymous"></script><!--Downloaded font awesome icons-->
     <title>Todo List</title>
     <script type="module" src="/src/main.ts"></script>
   </head>
 <body>
   <div id="grid-container">
-<h1>Att göra lista:</h1>
+<h1><i class="fa-solid fa-list-check"></i> Att göra lista: </h1>
+<form id="formTodo">
+  <input type="text" id="task" placeholder="Lägg till ny uppgift">
+  <select id="priority">
+    <option value="">Prioriteringsgrad:</option>
+    <option value="1">Hög</option>
+    <option value="2">Medel</option>
+    <option value="3">Låg</option>
+  </select>
+ 
+  <button id="submit" type="submit"><i class="fa-solid fa-plus"></i> Lägg till</button>
+  </form>
 
+  <div id="list">
+  <h2>Att göra: </h2>
+  <ul id="todoList"></ul>
+  </div>
+<button id="deleteTodos"><i class="fa-solid fa-xmark"></i> Ta bort alla: Att göra-uppgifter</button>
  <div id="footer-con">
  <footer>
   <p id="footer-headline"><strong>KURS:</strong> Programmering i TypeScript- Moment 2</p>
