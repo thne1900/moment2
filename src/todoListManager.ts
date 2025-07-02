@@ -1,6 +1,6 @@
-import type { Todo } from './Itodo.ts';
+import type { Todo } from './Itodo';
 
-export class TodoList {
+export class TodoListManager {
   private todos:Todo[]=[];
 
 constructor(){

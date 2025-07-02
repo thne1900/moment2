@@ -1,7 +1,7 @@
 import './style.css'
-import { TodoList } from './todoListManager.ts';
+import { TodoListManager } from './todoListManager';
 
-const myTodoList= new TodoList();
+const myTodoList= new TodoListManager();
   console.log(myTodoList.getTodos());
 
 // Hämta DOM-element
