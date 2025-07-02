@@ -13,15 +13,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   background-color: green;
   color:black;
@@ -38,82 +29,112 @@ body {
     grid-column-gap: 2%;
 }
 
-h1 {color:whitesmoke;
+h1 {
+  color:whitesmoke;
   padding:5%;
-  text-shadow: 6px 6px 8px rgba(0,0,0,0.7);
+  text-shadow: 8px 8px 10px rgba(0,0,0,0.8);
   box-shadow: 6px 6px 8px rgba(0,0,0,0.7);
-  border:2px black solid;
+  border:4px black solid;
   background-color: lightgreen;
   font-size: 3.2em;
   line-height: 1.1;
   grid-row-start: 1; 
-    grid-column-start: 2; 
+    grid-column-start: 1; 
     grid-row-end: 2; 
-    grid-column-end: 2;
+    grid-column-end: 4;
+    margin-right:5%;
+    margin-left:5%;
     text-align: center;
 }
 
 form {
-  grid-area: 3/2/4/2; 
+  grid-area: 3/1/4/4; 
   display: flex;
   justify-content: center; 
   align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
 }
+
 input {
-  padding:2%;
+  padding:1.5%;
   margin:1%;
   border:2px black solid;
-  width:80%;
+  width:60%;
 }
+
 select {
-  padding:2%; 
+  padding:1.5%; 
   margin:1%; 
   border:2px black solid;
-  width:80%;
+  width:60%;
 }
+
 li {
+  margin:2%;
   font-size: 1.4em; 
   font-weight: bold;
   color:whitesmoke;
   text-shadow: 6px 6px 8px rgba(0,0,0,0.7);
 }
+
 #submit {
+  font-size: 1.2em;
   padding:1%; 
   border:2px black solid; 
-  font-weight: 800; 
+  font-weight: bold; 
   border-radius: 15px; 
-  width:50%;
+  width:30%;
 }
 
 #submit:hover {
   background-color: lightgreen;
-  padding:2%;}
+  padding:1.5%;
+  font-weight: bolder;
+  cursor: pointer;
+}
 
 h2 {
+  text-decoration: underline;
+  text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.87);
+  text-align: center;
   font-size: 2.0em;
 }
-#list {
-  grid-area:5/1/5/4;
-  margin-left:35%;
 
+#list {
+  margin-right: 30%;
+  grid-area:5/1/5/4;
+  margin-left:30%;
 }
-#deleteTodos {grid-area: 6/2/6/2; 
-  width:60%; 
+
+#todoList {
+  border: 4px white solid;
+  box-shadow: 6px 6px 8px rgba(0,0,0,0.7);
+  }
+
+#deleteTodos {
+  grid-area: 6/2/6/2; 
+  font-size: 1.2em;
+  width:40%; 
   padding:2%; 
-  margin-left:20%;
+  margin-left:33%;
   border:2px black solid; 
   font-weight: bold;
   border-radius: 15px;
   margin-top: 10%;
+  margin-bottom: 10%;
 }
+
 #deleteTodos:hover {
   background-color: rgb(251, 49, 49);  
   font-weight: bolder; 
   padding:3%;
 }
+
 #footer-con {
   grid-area:7/1/8/4;
-  padding: 2%;}
+  padding: 2%;
+}
 
 #footer-headline {
   font-size: 1.3em;
@@ -139,13 +160,15 @@ footer{
     background-color: #f9f9f9;
   }
 }
+
 @media (max-width:1024px) {
-  h1{grid-area:1/1/1/4; margin-left:10%; margin-right: 10%; font: 3em;}
+  h1{grid-area:1/1/1/4; margin-left:10%; margin-right: 10%; font-size: 3em;}
   form {grid-area:3/1/4/4; margin-left: 10%; margin-right: 10%;}
   input {width:60%; padding:1.5%;}
   select {width:60%; padding:1.5%;}
   #submit {width:25%; font-size: 1.2em;}
-  #deleteTodos {width:75%; margin-left:10%; font-size: 1.2em;}
+  #list {margin-left: 20%; margin-right:20%;}
+  #deleteTodos {width:55%; margin-left:22%; font-size: 1.2em;}
 }
 
 @media (max-width:600px) {
@@ -155,7 +178,8 @@ form {margin-left: 5%; margin-right: 5%;}
 input {width:30%;}
 select {width:30%;}
 #submit {width:20%; font-size: 0.8em;}
-#deleteTodos {grid-area:6/1/6/4; width:50%; margin-left:25%; font-size: 0.9em;}
+li {font-size: 1.2em;}
+#deleteTodos {grid-area:6/1/6/4; width:30%; margin-left:33%; font-size: 0.9em;}
 footer {font-size: 0.8em;}
-
+#footer-headline {font-size: 1.2em;}
 }
