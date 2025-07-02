@@ -1,4 +1,4 @@
-import type { Todo } from './todo.ts';
+import type { Todo } from './Itodo.ts';
 
 //Klass från interfacet- todo.ts
 export class Todolist implements Todo {

@@ -1,4 +1,4 @@
-import type { Todo } from './todo.ts';
+import type { Todo } from './Itodo.ts';
 
 export class TodoList {
   private todos:Todo[]=[];
