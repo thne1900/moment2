@@ -74,6 +74,13 @@ private saveToLocalStorage():void {
       }
       }
     }
-
+ 
+  //Metod för att ta bort alla tillagda todos.
+  public deleteTodos():void{
+    this.todos=[];
+    this.saveToLocalStorage();
+    }
   }
+
+  
 

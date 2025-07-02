@@ -56,6 +56,12 @@ function addTodo():void {
   }
 };
 
-
+//Händelsehanterare för att radera alla todos
+const markAllButton=document.getElementById("deleteTodos") as HTMLButtonElement;
+markAllButton.addEventListener("click", ()=> {
+  myTodoList.deleteTodos();
+  renderTodolist();
+});
+renderTodolist();
 
 
