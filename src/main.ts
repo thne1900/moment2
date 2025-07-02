@@ -12,7 +12,7 @@ const inputPrio = document.getElementById("priority") as HTMLSelectElement;
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-addTodo();
+createTodo();
 
 });
 
@@ -43,7 +43,7 @@ const todoList = document.getElementById("todoList") as HTMLUListElement;
 }
 
 // Funktion för att lägga till todos
-function addTodo():void {
+function createTodo():void {
   const task = inputTask.value.trim();
   const priority = parseInt(inputPrio.value, 10);
   const todoSuccess = myTodoList.addTodo(task, priority);
