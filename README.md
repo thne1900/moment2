@@ -22,12 +22,16 @@
 - Sedan inhämtas elementen (formuläret, inmatningsfältet för "task" och "priority" ) från HTML-dokumentet som ska användas vid utskrift till webbplatsen. 
 - Vid inhämtning av formuläret har det gjorts så att sidan inte laddas om (preventDefault), sen anropas "addTodo" för att lägga till ny uppgift. 
 - Funktionen "renderTodoList", hämtar in listan och sätter den som tom. Kör en loop för att gå igenom listan på alla todos. Skapar li-element för varje uppgift och en checkbox för att kunna markera varje uppgift som klar. En händelsehanterare som reagerar på ändring i checkboxen och vid markerad som klar, görs listan om. Utskrift på hur "task" och "priority" skrivs ut och syns på webbplatsen. Har lagt till en klass: "done" är slutförd och då blir uppgiften genomstruken. Därefter läggs "li" till i listan i DOM. 
-- I funktionen "addTodo" hämtas texten från inmatningsfältet och gör om priritet till nummer. Tillägg av ny uppgift i listan görs via "myTodoList.addTodo". Om det lyckas töms inputfälten och gör om listan. Om inte, så syns ett felmeddelande på webbplatsen. 
+- I funktionen "createTodo" hämtas texten från inmatningsfältet och gör om priritet till nummer. Tillägg av ny uppgift i listan görs via "myTodoList.addTodo". Om det lyckas töms inputfälten och gör om listan. Om inte, så syns ett felmeddelande på webbplatsen. 
 - För att radera alla tillagda todos, hämtas knapp, som vid klick anropar "deleteTodo" som tar bort alla todos. Därefter görs listan om. 
 - Vid sinomladdning, visas den aktuella todolistan. 
 
 
 ## Källor: 
-- MittUniversitetet(VIDEO): Uppföljning Moment 2. Lars Lundin April 10, 2025. Hämtad från: https://play.miun.se/media/Uppf%C3%B6ljning+Moment+2/0_tfimzssc 
+- MittUniversitetet(VIDEO): Uppföljning Moment 2. Lars Lundin April 10, 2025. https://play.miun.se/media/Uppf%C3%B6ljning+Moment+2/0_tfimzssc 
+- https://how.dev/answers/what-is-the-stringtrim-method-in-typescript
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+- https://www.typescriptlang.org/docs/handbook/2/typeof-types.html
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger 
 
 ### Skriven av: thne1900, 2025.

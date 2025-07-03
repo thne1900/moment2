@@ -4,16 +4,15 @@ import { TodoListManager } from './todoListManager';
 const myTodoList= new TodoListManager();
   console.log(myTodoList.getTodos());
 
-// Hämta DOM-element
-const form = document.getElementById("formTodo") as HTMLFormElement;
-const inputTask = document.getElementById("task") as HTMLInputElement;
-const inputPrio = document.getElementById("priority") as HTMLSelectElement;
-
+// Hämta DOM-elementet (form)
+document.addEventListener("DOMContentLoaded", ()=> {
+const form = document.getElementById("formTodo")! as HTMLFormElement;
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
 createTodo();
 
+  });
 });
 
 //Funktion för att hantera listan
@@ -44,9 +43,11 @@ const todoList = document.getElementById("todoList") as HTMLUListElement;
 
 // Funktion för att lägga till todos
 function createTodo():void {
+  const inputTask = document.getElementById("task") as HTMLInputElement;
+  const inputPrio = document.getElementById("priority") as HTMLSelectElement;
   const task = inputTask.value.trim();
   const priority = parseInt(inputPrio.value, 10);
-  const todoSuccess = myTodoList.addTodo(task, priority);
+  const todoSuccess:boolean = myTodoList.addTodo(task, priority);
   if (todoSuccess) {
     inputTask.value = "";
     inputPrio.value = "";
