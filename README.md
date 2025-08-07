@@ -4,7 +4,7 @@
 - Började med att starta upp ett vite projekt och utformade en README-fil (för arbetsprocessen). 
 - Kontrollerade att projektet synkade till Netlify för publicering. 
 - Startade upp med att skapa element i index.html dokumentet. 
-- Utformade designen för html dokumentet i filen style.css. 
+- Utformade designen för html dokumentet i filen style.css och tillägg av symboler. 
 - Gjorde en filstruktur på de TypeScript-filerna som ska bygga upp "Att-göra listan" på webbplatsen.
 - Gav filerna namn baserat på deras kodinnehåll.
 - I Itodo.ts filen skapades interfacet (Todo) med dess egenskaper (task, completed, priority).
@@ -27,10 +27,14 @@
 
 
 ## Källor: 
-- MittUniversitetet(VIDEO): Uppföljning Moment 2. Lars Lundin April 10, 2025. https://play.miun.se/media/Uppf%C3%B6ljning+Moment+2/0_tfimzssc 
-- https://how.dev/answers/what-is-the-stringtrim-method-in-typescript
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
-- https://www.typescriptlang.org/docs/handbook/2/typeof-types.html
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger 
+- (Föreläsning) TypeScript föreläsning 2. Lars Lundin, 2025-04-02.
+- (Föreläsning) BankInterface. Lars Lundin, 2025-04-02.
+- (Föreläsning) BankKlasser. Lars Lundin, 2025-04-03.
+- (Föreläsning): Uppföljning Moment 2. Lars Lundin 2025-04-10.
+- (Internet) https://how.dev/answers/what-is-the-stringtrim-method-in-typescript
+- (Internet) https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+- (Internet) https://www.typescriptlang.org/docs/handbook/2/typeof-types.html
+- (Internet) https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger 
+- (Internet) https://fontawesome.com/ 
 
 ### Skriven av: thne1900, 2025.
