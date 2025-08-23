@@ -2,9 +2,9 @@
 ## Objectorienterad programmering- Webbplats todolist
 
 - Började med att starta upp ett vite projekt och utformade en README-fil (för arbetsprocessen). 
-- Kontrollerade att projektet synkade till Netlify för publicering. 
+- Kontrollerade att projektet synkade till Netlify inför publicering. 
 - Startade upp med att skapa element i index.html dokumentet. 
-- Utformade designen för html dokumentet i filen style.css och tillägg av symboler. 
+- Utformade designen för html dokumentet i filen style.css och tillägg av symboler, från fontawesome. 
 - Gjorde en filstruktur på de TypeScript-filerna som ska bygga upp "Att-göra listan" på webbplatsen.
 - Gav filerna namn baserat på deras kodinnehåll.
 - I Itodo.ts filen skapades interfacet (Todo) med dess egenskaper (task, completed, priority).
